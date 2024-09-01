@@ -1,4 +1,0 @@
-from nerfstudio.plugins.registry_dataparser import DataParserSpecification
-from method_template.template_dataparser import TemplateDataParserConfig
-
-TemplateDataparser = DataParserSpecification(config=TemplateDataParserConfig())
