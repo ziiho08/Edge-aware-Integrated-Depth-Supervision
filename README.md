@@ -24,6 +24,3 @@ ns-train edge-nerf --data [PATH]
 ## Demo
 
 KITTI-360 dataset.
-
-JBNU-Depth360 dataset.
-
