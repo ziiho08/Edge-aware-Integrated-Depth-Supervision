@@ -1,34 +1,24 @@
-# nerfstudio-method-template
-Template repository for creating and registering methods in Nerfstudio.
+# Neural Radiance Fields for Fisheye Driving Scenes using Edge-aware Integrated Depth Supervision
+We propose an edge-aware integration loss function, which leverages sparse LiDAR projections and dense depth maps estimated from a learning-based depth model. 
 
-## File Structure
-We recommend the following file structure:
-
+## Installation
+Ensure that nerfstudio has been installed according to the [instructions](https://docs.nerf.studio/quickstart/installation.html). 
+Then, clone this repository and run the commands:
 ```
-├── my_method
-│   ├── __init__.py
-│   ├── my_config.py
-│   ├── custom_pipeline.py [optional]
-│   ├── custom_model.py [optional]
-│   ├── custom_field.py [optional]
-│   ├── custom_datamanger.py [optional]
-│   ├── custom_dataparser.py [optional]
-│   ├── ...
-├── pyproject.toml
-```
-
-## Registering with Nerfstudio
-Ensure that nerfstudio has been installed according to the [instructions](https://docs.nerf.studio/en/latest/quickstart/installation.html). Clone or fork this repository and run the commands:
-
-```
+git clone https://github.com/ziiho08/Edge-aware-Integrated-Depth-Supervision.git
 conda activate nerfstudio
-cd nerfstudio-method-template/
+cd edge_nerf/
 pip install -e .
 ns-install-cli
 ```
 
-## Running the new method
-This repository creates a new Nerfstudio method named "method-template". To train with it, run the command:
+## Training the edge_nerf
+To train the edge_nerf, run the command:
 ```
-ns-train method-template --data [PATH]
+ns-train edge_nerf --data [PATH]
 ```
+
+## Demo
+<img width="250" height="250" src="https://github.com/ziiho08/DiCoNeRF/assets/68531659/763b9fad-3038-40bb-8810-a18cc582a1cc"/>
+<img width="250" height="250" src="https://github.com/ziiho08/DiCoNeRF/assets/68531659/23b6192c-c366-4fbe-b928-48a54ff9f141"/>
+KITTI-360 dataset.
