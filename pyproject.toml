@@ -1,0 +1,13 @@
+[project]
+name = "edge_nerf"
+description = "Neural Radiance Fields for Fisheye Driving Scenes using Edge-aware Integrated Depth Supervision."
+version = "0.1.0"
+
+dependencies = ["nerfstudio >= 0.3.0"] 
+
+[tool.setuptools.packages.find]
+include = ["edge_nerf*"]
+
+# register the entry point of your new method here:
+[project.entry-points.'nerfstudio.method_configs']
+edge_nerf = 'edge_nerf.config:edge_nerf'
