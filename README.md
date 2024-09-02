@@ -1,5 +1,6 @@
 # Neural Radiance Fields for Fisheye Driving Scenes using Edge-aware Integrated Depth Supervision
 We propose an edge-aware integration loss function, which leverages sparse LiDAR projections and dense depth maps estimated from a learning-based depth model. Our algorithm assigns larger weights to neighboring points that have depth values similar to the sensor data.
+
 ![fig2](https://github.com/user-attachments/assets/1c0de316-e83c-4a28-869a-0c8e7d91a4a1)
 
 ## Installation
