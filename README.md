@@ -19,8 +19,3 @@ To train the edge_nerf, run the command:
 ```
 ns-train edge_nerf --data [PATH]
 ```
-
-## Demo
-<img width="250" height="250" src=""/>
-
-KITTI-360 dataset.
